@@ -1,0 +1,143 @@
+.body{width: 1200px;}
+
+.header{
+
+}
+
+
+ol, ul {
+    list-style: none;
+    display: flex;
+}
+
+/* ABOUT部分装飾 */
+.about {
+    text-align: center;
+}
+
+p.about-maintext0 {
+    margin-top: 30px;font-size: 18px;
+}
+
+p.about-maintext {
+    color: #ffd61a;
+    font-size: 24px;
+    margin-top: 60px
+}
+
+p.about-maintext1 {
+    margin-top: 60px; font-size: 16px;
+}
+
+p.about-maintext2 {
+    margin-top: 30px;font-size: 16px;
+}
+p.about-maintext3 {
+    margin-top: 40px;font-size: 16px;
+}
+
+p.about-maintext4 {
+    margin-top: 40px;font-size: 16px;
+}
+
+.\34 images {
+    display: flex;
+}
+
+p.course-maintext {
+    color: #ffd61a;
+    font-size: 24px;
+    margin-top: 60px
+}
+p.course-maintext0 {
+    margin-top: 30px;font-size: 16px;
+}
+
+.course1 {
+    display: flex;
+}
+
+.course-text {
+    width: 480px;
+    align-items: center;
+}
+
+p.coursedetail1 {font-size: 18px;font-weight: bold;}
+
+p.coursedetail1-1 {
+    margin-top: 40px;font-size: 16px; 
+}
+
+.course2 {
+    display: flex;
+}
+
+p.coursedetail2-1 {
+    font-size: 18px;font-weight: bold;}
+
+    p.coursedetail2-2 {
+        margin-top: 40px;font-size: 16px; 
+    }
+
+.course3 {
+        display: flex;
+    }
+p.coursedetail3-1 { font-size: 18px;font-weight: bold;
+    } 
+
+p.news-maintext {
+    color: #ffd61a;
+    font-size: 24px;
+    margin-top: 60px}
+
+p.news-maintext2 {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .news-updates {
+        display: flex;
+        width: 300px;
+    }
+
+    button {
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+        margin-top: 60px;
+    }
+    button {
+        margin-bottom: 60px;
+    }
+
+    p.access-maintext {font-size: 18px;font-weight: bold;
+       }
+       p.access-maintext2 {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        padding-top: 60px;
+    }
+    
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    tr {
+        height: 50px;
+    }
+
+    p.contact-maintext {font-size: 18px;font-weight: bold; margin-bottom: 30px;
+    }
+
+    p.contact-maintext3 {
+        margin: 30px;
+    }
+
+    p.contact-maintext4 {
+        margin-bottom: 70px;
+    }
+
+    
