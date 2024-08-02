@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>チーズアカデミー</title>
-  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- 最初の設定は終わっています　必要な方は触ってください -->
@@ -18,6 +18,7 @@
 
   <!-- header部分 -->
 <div class="header">
+
 <img src="./img/header_logo.png" alt="">
 <ul>
   <li>ABOUT</li>
@@ -31,8 +32,10 @@
 <!-- メインビジュアル部分 -->
  <div class="mainvisual">
 <img src="./img/mainbg.png" alt="">
+<div>
 <p>セカイを変えるチーズを作ろう</p>
 <p>チーズ職人養成学校「チーズアカデミーTOKYO」</p>
+</div>
  </div>
 
  <!-- ABOUT部分 -->
@@ -46,7 +49,7 @@
 <p class="about-maintext4">卒業後、チーズ自給自足のバックアップはもちろんのこと、<br>
   チーズ職人への就職・転職もサポートします。</p>
 
-  <div class="4images">
+  <div class="images4">
 <img src="./img/about_01.jpg" alt="">
 <img src="./img/about_02.jpg" alt="">
 <img src="./img/about_03.jpg" alt="">
@@ -104,6 +107,7 @@
   <p class="news-maintext2">ニュース</p>
 </div>
 
+<div class = "newstextimages">
 <!-- 各NEWS テキスト①-->
 <div class="news-updates">
 <div class="news-update1">
@@ -130,6 +134,7 @@
   <p class="newstext3">チーズアカデミー卒業生のコスゲさんによる<br>
     チーズだけをふんだんに使用した話題のピザ屋<br>
     「Kosuge Pizza」が渋谷でオープンしました！</p>
+</div>
 </div>
 </div>
 
@@ -170,13 +175,127 @@
       間違っても問い合わせしないようお願いいたします。</p>
   </div>
 
-  <div class="form">
-<form action="">
+  <!-- Form部分 -->
+ <!-- <div>
+  <form action="" method="get" class="form">
+    <div class="form1">
+      <label for="name">名前 </label>
+      <input type="text" name="name" id="name" required />
+    </div>
+
+    <div class="form2">
+      <label for="kana">カナ </label>
+      <input type="kana" name="kana" id="kana" required />
+    </div>
+
+    <div class="form3">
+      <label for="email">メールアドレス </label>
+      <input type="email" name="email" id="email" required />
+    </div>
+
+    <div class="form4">
+      <label for="kikkake">チーズアカデミーを知ったきっかけ </label>
+      <input type="kikkake" name="kikkake" id="kikkake" required />
+    </div>
+  
+  </dd class="志望動機">
+  <dt>志望動機</dt>
+  <dd>
+    <ul>
+      <li><input type="checkbox" name="" value="">起業をしたい</li>
+      <li><input type="checkbox" name="" value="">チーズ系企業に就職・転職したい</li>
+      <li><input type="checkbox" name="" value="">チーズと関わる仕事をしており、仕事に生かしたい</li>
+      <li><input type="checkbox" name="" value="">チーズの教養を身につけたい</li>
+    </ul>
+  </dd>
+</table>
+
+    <div class="button-submit">
+      <button>送信</button>
+      </div>
+  
+  </form> -->
+</div>
+
+<div class="contact-form">
+	<form method="" action="">
+		<table>
+			<tr><th>名前</th><td><input type="text"></td></tr>
+      <tr><th>カナ</th><td><input type="text"></td></tr>
+			<tr><th>メールアドレス</th><td><input type="email"></td></tr>
+			<tr><th>チーズアカデミーを知ったきっかけ</th><td><input type="kikkake"></td></tr>
+			<tr class="motivation">
+				<th>志望動機</th>
+				<td>
+					<label><input type="radio" name="" value="1">起業をしたい</label>
+					<label><input type="radio" name="" value="2">チーズ系企業に就職・転職したい</label>
+          <label><input type="radio" name="" value="2">チーズと関わる仕事をしており、仕事に生かしたい</label>
+          <label><input type="radio" name="" value="2">チーズの教養を身につけたい</label>
+        </td>
+			</tr>
+			<tr><th>詳細</th><td><textarea></textarea></td></tr>
+		</table>
+		<input class="submit-btn" type="submit" value="送信">
+	</form>
+</div>
+
+<!-- <form action="">
 名前: <input type="text" name="your name"
+カナ: <input type="text" name="katakana"
+メールアドレス: <input type="text" name="email"
 
+</form> -->
 
+<!-- <form action="receive.php" method="post">
+  <dl>
+    <div class="form1">
+    <dt>名前</dt>
+    <dd>
+      <input type="text" name="your_name">
+    </dd>
+  </div>
 
-</form>
+  <div class="form2">
+    <dt>カナ</dt>
+    <dd>
+      <input type="password" name="your_password">
+    </dd>
+  </div>
+
+  <div class="form3">
+    <dt>メールアドレス
+    </dt>
+    <dd>
+      <input type="text" name="your_name">
+    </dd>
+  </div>
+
+  <div class="form4">
+    <dt>チーズアカデミーを知ったきっかけ
+    </dt>
+    <dd>
+      <input type="text" name="your_name">
+    </dd>
+  </div>
+
+    <dt>志望動機</dt>
+    <dd>
+      <ul>
+        <li><input type="checkbox" name="motivation" value="起業をしたい">起業をしたい</li>
+        <li><input type="checkbox" name="motivation" value="チーズ系企業に就職・転職したい">チーズ系企業に就職・転職したい</li>
+        <li><input type="checkbox" name="motivation" value="チーズと関わる仕事をしており、仕事に生かしたい">チーズと関わる仕事をしており、仕事に生かしたい</li>
+        <li><input type="checkbox" name="motivation" value="チーズの教養を身につけたい">チーズの教養を身につけたい</li>
+
+    </dd>
+
+  </dl>
+  <p><input type="submit" value="送信する"></p>
+</form> -->
+
+<!-- copyright部分 -->
+<div class="copyright">
+  <p class="copyrighttext">copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
+</div>
 
 
   </div>

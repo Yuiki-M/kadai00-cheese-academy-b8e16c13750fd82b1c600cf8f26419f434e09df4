@@ -1,14 +1,31 @@
-.body{width: 1200px;}
-
-.header{
-
-}
+body{width: 1200px;}
 
 
+/*header部分*/
 ol, ul {
     list-style: none;
-    display: flex;
+    display:flex;
+    justify-content: right;
 }
+li{margin: 25px 25px 25px 25px;}
+
+
+/* メインビジュアル部分*/
+.mainvisual {width: 100%;
+    position: relative;}
+    .mainvisual img{
+        width:100%;
+      }
+      .mainvisual div{
+        position: absolute;
+        top:50%;
+        left:50%;
+        font-size:30px;
+        color: white;
+        padding:0;
+        margin:0;
+      }
+
 
 /* ABOUT部分装飾 */
 .about {
@@ -40,9 +57,17 @@ p.about-maintext4 {
     margin-top: 40px;font-size: 16px;
 }
 
-.\34 images {
+.images4{ display: flex;
+    justify-content: center;
+    align-items: center; }
+.images4 img{width: 25%;}
+
+
+/* .\34 images {
     display: flex;
-}
+} */
+
+/*Course部分装飾*/
 
 p.course-maintext {
     color: #ffd61a;
@@ -61,6 +86,41 @@ p.course-maintext0 {
     width: 480px;
     align-items: center;
 }
+/* .course-text{justify-content: center;align-items: center;} */
+    /* .course-text{display: flex;
+justify-content: center;
+align-items: center;} */
+
+.course1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course1 img{width: 720px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+.course2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course2 img{width: 720px;
+    height: 500px;
+    object-fit: cover;
+  }
+.course3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course3 img{width: 720px;
+    height: 500px;
+    object-fit: cover;
+  }
+
 
 p.coursedetail1 {font-size: 18px;font-weight: bold;}
 
@@ -85,6 +145,11 @@ p.coursedetail2-1 {
 p.coursedetail3-1 { font-size: 18px;font-weight: bold;
     } 
 
+/*News部分装飾*/
+
+.news-updates{display:flex; 
+    justify-content: space-around;}
+
 p.news-maintext {
     color: #ffd61a;
     font-size: 24px;
@@ -100,17 +165,29 @@ p.news-maintext2 {
         width: 300px;
     }
 
-    button {
+/*ボタンhover部分:*/
+    .button-more button {
         width: 300px;
         height: 60px;
         font-size: 18px;
         margin-top: 60px;
-    }
-    button {
+            color: #ffd61a;
+            transition: all 0.5s;
+          }
+          
+          .button-more button:hover {
+            background: black;
+            color: white;
+            border-radius: 20px;
+          }
+    
+    .button-more {
         margin-bottom: 60px;
     }
+/*ACCESS部分装飾*/
 
-    p.access-maintext {font-size: 18px;font-weight: bold;
+    p.access-maintext {font-size: 18px;
+        font-weight: bold;
        }
        p.access-maintext2 {
         font-size: 16px;
@@ -119,17 +196,32 @@ p.news-maintext2 {
         padding-top: 60px;
     }
     
+iframe{width: 1200px;
+object-fit: fill;}
+
+/* Table部分装飾*/
+
     table {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 60px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        padding-left: 16px;
+        padding-right: 64px;
     }
 
     tr {
         height: 50px;
     }
 
-    p.contact-maintext {font-size: 18px;font-weight: bold; margin-bottom: 30px;
+    p.contact-maintext {font-size: 18px;
+        font-weight: bold; 
+        margin-bottom: 30px;
+        padding: top 60px; ;
+    }
+
+    p.contact-maintext2 {
+        margin-bottom: 60px;
     }
 
     p.contact-maintext3 {
@@ -139,5 +231,52 @@ p.news-maintext2 {
     p.contact-maintext4 {
         margin-bottom: 70px;
     }
-
+/*フォーム部分*/
+/* ul{display: flex;
+    flex-direction: column;
+align-items: center;}
     
+.form1 {display: flex;}
+.form2 {display: flex;}
+.form3 {display: flex;}
+.form4 {display: flex;} */
+
+.motivation{display: flexbox;}
+
+form.form-example {
+    display: table;
+  }
+  
+  div.form-example {
+    display: table-row;
+  }
+  
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+  }
+  
+  .submit-btn{width: 300px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 60px;
+        color: #ffd61a;
+        transition: all 0.5s;
+      }
+      
+      .button-more button:hover {
+        background: black;
+        color: white;
+        border-radius: 20px;}
+
+    .copyright{
+        background-color: #707070;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 140px;
+    }
